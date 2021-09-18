@@ -1,0 +1,93 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-size: 62.5%; 
+}
+
+:root {
+    --pc-color-white: #fff;
+    --bg-color-paper: #FBF3E8;
+    --pf-allison: 'Carattere', cursive;
+    --sf-roboto: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(Assets/images/gary-meulemans-F90MkaweLYg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    /*may need to change height at some point */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote-generator-container {
+    background-color: var(--pc-color-white);
+    width: 70%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    #quote-generator-container {
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #quote-generator-container {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+#quote-container {
+    background-color: var(--bg-color-paper);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 95%;
+}
+
+@media screen and (max-width: 768px) {
+    #quote-container {
+        height: 100%;
+    }
+}
+
+
+#quote-text {
+    font-family: var(--pf-allison);
+    font-size: 5rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    #quote-text {
+        font-size: 4rem;
+    }
+}
+
+#quote-author {
+    font-size: 2rem;
+    font-family: var(--sf-roboto);
+}
+
+#quote-button {
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    background: none;
+    font-family: var(--sf-roboto);
+}
